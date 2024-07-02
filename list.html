@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Materialize Theme</title>
+</head>
+
+<body id="home" class="scrollspy">
+
+    <!-- Section: Navigation -->
+    <div class="navbar-fixed">
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+        </ul>
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#home" class="brand-logo">
+                        <img src="img/logo.png" class="responsive-img" />
+                    </a>
+                    <a href="#" data-activates="mobile-nav" class="button-collapse">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#">
+                                <i class="large material-icons">search</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="large material-icons">person</i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="cart.html">
+                                <i class="large material-icons">shopping_cart</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="right hide-on-med-and-down">
+                        <!-- Dropdown Trigger -->
+                        <li>
+                            <a class="dropdown-trigger" href="#!" data-target="dropdown1">Apparel<i
+                                    class="material-icons right">arrow_drop_down</i></a>
+
+                        </li>
+                        <li>
+                            <a href="#">Accessories</a>
+                        </li>
+                        <li>
+                            <a href="#">New Shepard</a>
+                        </li>
+                        <li>
+                            <a href="#">New Glenn</a>
+                        </li>
+                        <li>
+                            <a href="#">Gift Card</a>
+                        </li>
+                        <li>
+                            <a href="#">Clearance</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <!-- Section: Navigation -->
+
+    <!-- Mobile Navigation -->
+    <ul class="side-nav" id="mobile-nav">
+        <li>
+            <a href="#">Accessories</a>
+        </li>
+        <li>
+            <a href="#">New Shepard</a>
+        </li>
+        <li>
+            <a href="#">New Glenn</a>
+        </li>
+        <li>
+            <a href="#">Gift Card</a>
+        </li>
+        <li>
+            <a href="#">Clearance</a>
+        </li>
+    </ul>
+
+
+    <!-- Section: Featured Product -->
+    <section id="featuredProduct" class="section section-gallery scrollspy">
+        <div class="container">
+            <h3 class="left-align">
+                <span>Featured A List Of Versatile Products </span>
+            </h3>
+            <div class="row">
+                <div class="col m3">
+                    <h4>
+                        Filter:
+                    </h4>
+
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <!-- <li>
+                            <div class="collapsible-header">
+                                Price
+                                <i class="caret material-icons">keyboard_arrow_down</i>
+                            </div>
+                          <div class="collapsible-body">
+                            <div class="rangeSlide">
+                                <div>$</div>
+                                <input type="number" placeholder="From"/>
+                                <input type="number" placeholder="To" />
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                Size
+                                <i class="caret material-icons">keyboard_arrow_down</i>
+                            </div>
+                          <div class="collapsible-body">
+                                <form action="#">
+                                    <p>
+                                    <input type="checkbox" id="test5" />
+                                    <label for="test5">XS (6)</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test4" />
+                                        <label for="test4">S (7)</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3" />
+                                        <label for="test3">M (7)</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test2" />
+                                        <label for="test2">L (7)</label>
+                                    </p>                                
+                                </form>
+                          </div>
+                        </li> -->
+                        <li>
+                            <div class="collapsible-header">
+                                Product Type
+                                <i class="caret material-icons">keyboard_arrow_down</i>
+                            </div>
+                          <div class="collapsible-body">
+                            <form action="#">
+                               <!-- Product Type Filter -->
+                                <p>
+                                    <input type="checkbox" id="formalsCheckbox" />
+                                    <label for="formalsCheckbox">Formals</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="informalsCheckbox" />
+                                    <label for="informalsCheckbox">Informals</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="protectiveCheckbox" />
+                                    <label for="protectiveCheckbox">Protective gears</label>
+                                </p>
+                             
+                            </form>
+                          </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col m9">
+                    <div class="row" id="row1">
+                        <div class="col s12 m4" >
+                            <div class="card">
+                                <div class="card-image">
+                                    <img class="img-height" src="https://tse3.mm.bing.net/th?id=OIP.uJN5jBfPZPa0awdXHIQ3FgHaJ4&pid=Api&P=0&h=180" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">men's Formal 1</span>
+                                    <p>$42.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img class="img-height" src="https://images-na.ssl-images-amazon.com/images/I/611QMQPuMwL._AC_UL1500_.jpg" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">men's Formal 2</span>
+                                    <p>$42.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4" >
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="https://i.pinimg.com/originals/da/4a/5d/da4a5deb8ecd7c27e3e699ea673cb8fd.jpg" class="img-height">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">men's Formal 3</span>
+                                    <p>$42.95</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4" >
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="http://www.dhresource.com/0x0s/f2-albu-g1-M01-DD-83-rBVaGVVd5_mAJdBaAAEPnCsOd9w633.jpg/2015-ivory-women-pant-suits-stand-collar.jpg" class="img-height">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">Women's Formal 1</span>
+                                    <p>$42.95</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4" >
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="https://i.pinimg.com/736x/49/da/62/49da62bd8afb5cf1205d744c1d9994c3.jpg" class="img-height">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">Women's Formal 2</span>
+                                    <p>$42.95</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4" >
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="https://i.pinimg.com/originals/ab/28/02/ab2802c924eee4d2f4add8aa248bf2c2.jpg" class="img-height">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">Women's Formal 3</span>
+                                    <p>$42.95</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+            </div>
+            <div class="row" id="row2">
+                <div class="col s12 m4" >
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-height" src="https://supremeshirts.in/wp-content/uploads/2021/03/Itachi-Uchiha-Black-T-Shirt.jpeg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Anime T-shirt 1</span>
+                            <p>$42.95
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-height" src="https://m.media-amazon.com/images/I/51Wflu-xjnL._AC_UX466_.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Anime T-shirt 2</span>
+                            <p>$42.95
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4" >
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://sklepotaku.pl/environment/cache/images/2000_2000_productGfx_10652/Rozowy_jujutsu-kaisen-kawaii-gojo-satoru-letnia_variants-1.jpg" class="img-height">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Anime T-shirt 3</span>
+                            <p>$42.95</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4" >
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.3UFhwxJv9pEwCeDfq3113AHaIv&pid=Api&P=0&h=180" class="img-height">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Mafia jacket</span>
+                            <p>$42.95</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4" >
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://cdna.lystit.com/photos/nordstrom/beddc379/wrangler-Mid-Wash-Heritage-Pleated-Denim-Jacket.jpeg" class="img-height">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Jeans jacket</span>
+                            <p>$42.95</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4" >
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/914aI4wAeCL.jpg" class="img-height">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Floral design</span>
+                            <p>$42.95</p>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+        <div class="row" id="row3">
+            <div class="col s12 m4" >
+                <div class="card">
+                    <div class="card-image">
+                        <img class="img-height" src="https://www.damascusgear.com/wp-content/uploads/2023/03/FX1-Main.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Police/Military bullet proof body suit</span>
+                        <p>$42.95
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="img-height" src="http://atomicapparel.weebly.com/uploads/3/8/8/1/38812833/s572591319353072108_p3_i1_w640.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Anti-Radiation body suit</span>
+                        <p>$42.95
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4" >
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://www.sciencealert.com/images/jsc2015e083483_alt.jpg" class="img-height">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Astronaut body gear</span>
+                        <p>$42.95</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4" >
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://i.pinimg.com/736x/80/16/12/8016121d32f9b80e4444c9d259f9eb55.jpg" class="img-height">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Fighter pilot body suit</span>
+                        <p>$42.95</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4" >
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://i.pinimg.com/736x/16/2f/e3/162fe321b143f8bf376c7f75ee4ed155.jpg" class="img-height">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Scuba Diver protection suit</span>
+                        <p>$42.95</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4" >
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://4.imimg.com/data4/GY/OH/MY-3653622/fire-retardant-suit-500x500.jpg" class="img-height">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Fire fighter suit</span>
+                        <p>$42.95</p>
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="section newGrey darken-2 white-text">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4 left-align quickLinks">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li>
+                            <a href="">
+                                FAQs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Terms of Use
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Refunds & Exchanges
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Do not sell my personal information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Accessibility
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s12 m4 right-align">
+                    <img class="materialboxed responsive-img" src="img/feather-footer.png" alt="">
+                </div>
+                <div class="col s12 m4">
+                    <p>
+                        For questions or concerns please contact customer service shop@blueorigin.com. Please allow up
+                        to 2 business days for response.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="center borderTop">
+            <p>
+                © 2023, Blue Origin Shop Powered by BRS Studio
+            </p>
+        </div>
+    </footer>
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".dropdown-trigger").dropdown();
+
+            // Filter Collapsible
+            $('.collapsible').collapsible({
+                accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hide all rows except row1 initially
+            document.getElementById('row1').style.display = 'block';
+            document.getElementById('row2').style.display = 'none';
+            document.getElementById('row3').style.display = 'none';
+        
+            // Function to show/hide rows based on checkbox selection
+            function toggleRows() {
+                var formalsChecked = document.getElementById('formalsCheckbox').checked;
+                var informalsChecked = document.getElementById('informalsCheckbox').checked;
+                var protectiveChecked = document.getElementById('protectiveCheckbox').checked;
+        
+                // Hide all rows
+                document.getElementById('row1').style.display = 'none';
+                document.getElementById('row2').style.display = 'none';
+                document.getElementById('row3').style.display = 'none';
+        
+                // Show rows based on checkbox selection
+                if (formalsChecked) {
+                    document.getElementById('row1').style.display = 'block';
+                }
+                if (informalsChecked) {
+                    document.getElementById('row2').style.display = 'block';
+                }
+                if (protectiveChecked) {
+                    document.getElementById('row3').style.display = 'block';
+                }
+            }
+        
+            // Event listener for checkbox changes
+            document.getElementById('formalsCheckbox').addEventListener('change', toggleRows);
+            document.getElementById('informalsCheckbox').addEventListener('change', toggleRows);
+            document.getElementById('protectiveCheckbox').addEventListener('change', toggleRows);
+        
+            // Initially trigger the toggle function to reflect default state
+            toggleRows();
+        });
+        
+    </script>
+</body>
+
+</html>
+
